@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type='text/css'>
+body{
+    background-image:url(../images/back.jpg); 
+    
+}
+    *{margin: 0;
+        padding:0;}
+* {box-sizing: border-box;}
+.blockos{
+    height:1000px;
+    margin:auto;
+    width: 1024px;
+    background-color: aqua;
+}
+.block1{
+  height: 70px;
+  width: 1024px;
+}
+a.knop {
+  margin-left: 75px;
+  color: black; 
+  font-size: 14px;
+  font-family:Verdana;
+  text-decoration: none; 
+  user-select: none;  
+  padding: 5px;
+  outline: none;
+    border:solid 2px black;
+    letter-spacing: 1.4px;
+    position: relative;
+    top:15px;
+    
+} 
+a.knop:hover { background: #15a98c; color:white}
+a.knop2 {
+  color: black; 
+  font-size: 14px;
+  font-family:Verdana;
+  text-decoration: none; 
+  user-select: none;  
+  padding: 5px;
+  outline: none;
+    border:solid 2px black;
+    letter-spacing: 1.4px;
+    position: relative;
+    top:15px;
+    right:6px;
+    
+} 
+a.knop2:hover { background: #15a98c; color:white}
+a.knop3 {
+  color: black; 
+  font-size: 14px;
+  font-family:Verdana;
+  text-decoration: none; 
+  user-select: none;  
+  padding: 5px;
+  outline: none;
+     border:solid 2px black;
+    letter-spacing: 1.4px;
+    position: relative;
+    top:15px;
+    right:12px;
+    
+} 
+a.knop3:hover { background: #15a98c; color:white}
+a.knop4 {
+  margin-left: 925px;
+  color: black; 
+  font-size: 14px;
+  font-family:Verdana;
+  text-decoration: none; 
+  user-select: none;  
+  padding: 5px;
+  outline: none;
+    border:solid 2px black;
+     border-radius:90px;
+    letter-spacing: 1.4px;
+    position: relative;
+
+    
+} 
+a.knop4:hover { background: #15a98c; color:white}
+.date{
+    height:20px;
+    width:180px;
+    margin-left:700px;
+    position: relative;
+    text-align: center;
+    bottom:20px;
+}
+.block2{
+    height:100px;
+    width:1024px;
+}
+a.knop5 {
+    top:10px;
+    margin-left: 72px;
+  color: black; 
+  font-size: 12px;
+  font-family:Verdana;
+  text-decoration: none; 
+  user-select: none;  
+  padding: 5px;
+  outline: none;
+    letter-spacing: 1.4px;
+    position: relative; 
+    
+} 
+a.knop5:hover { background: #15a98c; color:white}
+a.knop6 {
+    top:10px;
+  color: black; 
+  font-size: 12px;
+  font-family:Verdana;
+  text-decoration: none; 
+  user-select: none;  
+  padding: 5px;
+  outline: none;
+    letter-spacing: 1.4px;
+    position: relative; 
+    border-left: solid 1px #15a98c;
+    border-right: solid 1px #15a98c;
+} 
+a.knop6:hover { background: #15a98c; color:white}
+a.knop7 {
+    top:10px;
+  color: black; 
+  font-size: 12px;
+  font-family:Verdana;
+  text-decoration: none; 
+  user-select: none;  
+  padding: 5px;
+  outline: none;
+    letter-spacing: 1.4px;
+    position: relative; 
+} 
+a.knop7:hover { background: #15a98c; color:white}
+form {
+  position: relative;
+  width: 200px;
+    margin-left: 700px;
+}
+input, button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  background: #F9F0DA;
+  padding-left: 15px;
+}
+button {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #15a98c;
+  cursor: pointer;
+}
+button:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #F9F0DA;
+  font-size: 20px;
+  font-weight: bold;
+}
+a.knop9 {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 920px;
+    bottom:35px;
+    background-image: url(../images/car1.png);
+    background-size: cover;
+    background-position: center;
+} 
+a.knop8:hover { background: #15a98c; color:white}
+.zagol{
+    width: 270px;
+    height:40px;
+    position: relative;
+    bottom:60px;
+    margin-left:350px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration-line:underline;
+    text-underline-position: under;
+    margin:auto;
+}
+
+.slideshow-container {
+  max-width:90%;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+.block4{
+    width:1024px;
+    height:280px;
+}
+.text1{
+    margin:auto;
+    width:500px;
+    height:250px;
+    line-height: 1.5em;
+    font-family: Georgia;
+    font-size:15.29px;
+    margin-top: 13px;
+    color: black;
+}
+.text2{
+    margin:auto;
+    width:180px;
+    height:20px;
+    line-height: 1.5em;
+    font-family: Georgia;
+    font-size:15.29px;
+}
